@@ -24,7 +24,7 @@ void times_table(void)
 
 				if (n == 9)
 					continue;
-				_putchar(';');
+				_putchar(',');
 				_putchar(' ');
 			}
 			else
