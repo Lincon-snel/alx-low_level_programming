@@ -18,6 +18,8 @@ int main(void)
 			printf("Fizz ");
 		else if (k % 5 == 0)
 			printf("Buzz ");
+		else if (k == 100)
+			printf("%d", k);
 		else
 			printf("%d ", k);
 	}
