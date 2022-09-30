@@ -24,12 +24,12 @@ int convert(int cent)
 		else if (cent % 5 == 0)
 			cent -= 5;
 			else if (cent % 2 == 0)
-			{
-				if (cent % 10 == 6)
-					cent -= 1;
-				else
-					cent -= 2;
-			}
+		{
+			if (cent % 10 == 6)
+				cent -= 1;
+			else
+				cent -= 2;
+		}
 		else
 			cent -= 1;
 
