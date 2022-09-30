@@ -15,7 +15,7 @@ int convert(int cent)
 
 	while (cent != 0)
 	{
-		if (cent % 10 == 7 || cent % 10 == 9)
+		if (cent % 10 == 9 || cent % 10 == 7)
 			cent -= 2;
 		else if (cent % 25 == 0)
 			cent -= 25;
