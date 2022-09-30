@@ -14,19 +14,18 @@ int main(int argc, char *argv[])
 {
 	int k, j, mult;
 
-	k = atoi(argv[1]);
-	j = atoi(argv[2]);
-	mult = k * j;
-
-	if (argc == 3)
-	{
-		printf("%d\n", mult);
-	}
-	else if (argc < 3 || argc > 3)
+	if (argc != 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
+	else
+	{
+		k = atoi(argv[1]);
+		j = atoi(argv[2]);
+		mult = k * j;
 
-	return (0);
+		printf("%d\n", mult);
+		return (0);
+	}
 }
