@@ -33,7 +33,7 @@ char **strtow(char *str)
 	if (arr == NULL)
 		return (NULL);
 
-	for (i = 0; str[i] != '\0' && j < arr_len; i++)
+	for (i = 0; str[i] != '\0' && j <= arr_len; i++)
 	{
 		if (str[i] != ' ' || str[i] != '\t')
 		{
