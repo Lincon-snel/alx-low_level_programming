@@ -39,7 +39,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 
 	dup_ptr = ptr;
 
-	new_ptr = malloc(new_size);
+	new_ptr = malloc(sizeof(*dup_ptr) * new_size);
 
 	if (new_ptr == NULL)
 	{
