@@ -36,7 +36,7 @@ int main(int argc, char **argv)
 
 	if ((*opr == '/' || *opr == '%') && num2 == 0)
 	{
-		printf("Error\n"); 
+		printf("Error\n");
 		exit(100);
 	}
 
