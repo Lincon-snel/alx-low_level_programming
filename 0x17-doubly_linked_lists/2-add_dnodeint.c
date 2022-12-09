@@ -5,7 +5,8 @@
  * @head: pointer to the head of the list
  * @n: the new integer to be added
  *
- * Return: the address of the new element, or NULL if it failed.
+ * Return: the address of the new element,
+ *       or NULL if it failed.
  */
 
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
@@ -22,6 +23,7 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 
 	if (head != NULL)
 		(*head)->prev = newNode;
+
 	*head = newNode;
 
 	return (newNode);
